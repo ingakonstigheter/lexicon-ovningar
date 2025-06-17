@@ -1,0 +1,59 @@
+## 🧪 Övning: Beställningsformulär för Event (Avancerad)
+
+### 🕒 Tid: ca 1,5h
+
+Bygg ett komplett HTML-formulär för att beställa biljetter till ett event. Fokus ligger på **semantisk HTML**, **etiketter**, **fieldset/legend**, **validering**, **accessibility** och **korrekta input-typer**. Ingen JavaScript behövs.
+
+---
+
+### ✅ Krav
+
+#### 1. 👤 Personuppgifter
+
+* **Namn** (`type="text"`, `required`, `minlength=2`)
+* **E-post** (`type="email"`, `required`)
+* **Telefonnummer** (`type="tel"` – frivillig)
+
+> 💡 Alla fält ska ha synliga och kopplade `<label>`-element.
+
+---
+
+#### 2. 🎟️ Biljettinformation
+
+* **Biljett-typ**: radio-buttons med alternativen:
+
+  * Standard
+  * VIP
+  * Student
+* **Antal biljetter** (`type="number"`, `min="1"`, `max="10"`, `required`)
+* Hela denna sektion ska ligga i ett `<fieldset>` med `<legend>Biljettalternativ</legend>`.
+
+---
+
+#### 3. ⏰ Övriga val
+
+* **Datum** för när du ska delta (`type="date"`, `required`)
+* **Kommentarer** (`<textarea>`, valfritt)
+* **Prenumerera på nyhetsbrev** (`type="checkbox"`)
+
+---
+
+#### 4. ✅ Bekräftelse
+
+* Checkbox: “Jag godkänner villkoren” (`required`)
+* **Submit-knapp** (`type="submit"`)
+
+---
+
+### 🧠 Tillgänglighetskrav
+
+* Använd **labels korrekt** (via `for`/`id` eller som wrapper).
+* Använd **fieldset + legend** för grupperade inputs.
+* Formuläret ska gå att använda **endast med tangentbord**.
+
+---
+
+### 💡 Bonusutmaningar (valfritt)
+
+* Lägg till hjälptext under ett fält med t.ex. `<small>` eller `aria-describedby`.
+* Lägg till attribut som `placeholder`, `pattern`, `maxlength` där relevant.
