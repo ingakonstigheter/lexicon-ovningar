@@ -1,0 +1,2 @@
+# lexicon-ovningar
+Blandade övningsuppgifter
